@@ -1,27 +1,18 @@
 # Job Portal
 
-A modern, web-based job portal application built using **Java**, **Spring Boot**, and **Spring MVC**. This project allows employers to post job listings and job seekers to browse and apply for jobs. 
-It provides a user-friendly interface and a robust backend to manage job postings, applications, and user accounts.
+A web based, full-stack job portal designed to connect job seekers and employers through a seamless, modern interface.
+It allows employers to post job listings, and job seekers can search, filter, and apply for jobs.
+Built with Java, Spring Boot, and MySQL, the platform focuses on scalability, speed, and security.
 
-## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Key Features
 
-## Features
-- User authentication and authorization (Employer and Job Seeker roles)
-- Job posting creation, editing, and deletion by employers
-- Job search and filtering functionality for job seekers
-- Application submission and tracking
-- Responsive UI for desktop and mobile devices
-- RESTful API endpoints for job and user management
+🔐 Secure Authentication – Role-based login for employers & job seekers.
+📝 Job Postings – Employers can create, edit, and manage job listings.
+🔍 Advanced Job Search – Filter by title, location, skills, and salary.
+📄 Resume Uploads – Job seekers can attach resumes directly.
+📊 Application Tracking – Employers manage received applications.
+📱 Responsive UI – Works across mobile, tablet, and desktop.
+🌐 RESTful APIs – Exposes endpoints for jobs, users, and applications.
 
 ## Technologies Used
 - **Java**: Core programming language (version 17 recommended)
@@ -35,19 +26,11 @@ It provides a user-friendly interface and a robust backend to manage job posting
 - **HTML/CSS/JavaScript**: Frontend technologies
 - **Git**: Version control
 
-## Prerequisites
-Before running the application, ensure you have the following installed:
-- Java Development Kit (JDK) 17 or higher
-- Maven 3.6+
-- MySQL (or your preferred database)
-- Git
-- An IDE like IntelliJ IDEA or Eclipse (optional but recommended)
-
 ## Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/slendershield/job-portal.git
-   cd jobportal
+   git clone https://github.com/Charitha-08/JobPortal.git
+   cd JobPortal
    ```
 
 2. **Set up the database**:
@@ -64,8 +47,8 @@ Before running the application, ensure you have the following installed:
 Edit the `application.properties` file located in `src/main/resources/` with your database credentials and other settings:
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/job_portal_db
-spring.datasource.username=jobportal
-spring.datasource.password=jobportal
+spring.datasource.username=JobPortal
+spring.datasource.password=JobPortal
 spring.jpa.hibernate.ddl-auto=update
 spring.thymeleaf.cache=false
 server.port=8080
@@ -95,7 +78,7 @@ job-portal/
 │
 ├── src/
 │   ├── main/
-│   │   ├── java/com/example/jobportal/
+│   │   ├── java/com/example/JobPortal/
 │   │   │   ├── controller/      # Spring MVC controllers
 │   │   │   ├── entity/          # JPA entities (e.g., Job, User)
 │   │   │   ├── repository/      # Spring Data JPA repositories
@@ -123,8 +106,3 @@ Contributions are welcome! To contribute:
 3. Make your changes and commit (`git commit -m "Add your message"`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a Pull Request.
-
-Please ensure your code follows the project's coding standards and includes appropriate tests.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
