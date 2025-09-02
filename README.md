@@ -4,7 +4,7 @@ A web based, full-stack job portal designed to connect job seekers and employers
 It allows employers to post job listings, and job seekers can search, filter, and apply for jobs.
 Built with Java, Spring Boot, and MySQL, the platform focuses on scalability, speed, and security.
 
-🔐 ## Key Features
+## Key Features
 
 - 🔐 **Secure Authentication** – Role-based login for employers & job seekers.  
 - 📝 **Job Postings** – Employers can create, edit, and manage job listings.  
